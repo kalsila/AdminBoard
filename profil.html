@@ -40,12 +40,12 @@
             <div class="nav-item ">
               
               <div class="dropdown">
-                <a class="btn  dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="btn  dropdown-toggle text-light" href="index.html" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-circle-user text-light"></i>Welcome Ilazan
                 </a>
               
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li><a class="dropdown-item" href="profil.html"><i class="fa-solid fa-user"></i>Profil</a></li>
+                  <li><a class="dropdown-item" href="D"><i class="fa-solid fa-user"></i>Profil</a></li>
                   <li><a class="dropdown-item" href="Parametre.html"><i class="fa-solid fa-gear"></i>Parametre</a></li>
                   
                 </ul>
@@ -76,17 +76,50 @@
                         <div class="container py-5">
                         <div class="row">
                             <!-- Button trigger modal -->
-                        <div class="col-sm-12 col-md-8">
-                            <button type="button" class="btn btn-light " data-bs-toggle="" data-bs-target="#exampleModal">
+                        <div  class="col-sm-12 col-md-8">
+                            <a  href="index.html" type="button" class="btn btn-light " data-bs-toggle="" data-bs-target="#exampleModal">
                             <i class="fa-solid fa-arrow-left"></i> Back to Dashbord
-                            </button>
+                            </a>
                          </div> 
                          <div class="col-sm-12 col-md-4 ">
                                 <div class="d-flex justify-content-left">
-                                        <button type="button" class="btn btn-danger w-50 mx-3" data-bs-toggle=""                            data-bs-target="#exampleModal2"> 
-                                       <i class="fa-solid fa-lock"></i> Change Password
-                                        </button>
-                                        <button type="button" class="btn btn-success w-50" data-bs-toggle="" data-bs-target="#exampleModal1">
+
+
+                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i class="fa-solid fa-lock"></i> Change Password
+                                  </button>
+
+
+
+                                    <!-- Modal -->
+                                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                                  </div>
+                                                  <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="">
+                                                  </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-success">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+
+                                       
+                                        <button type="button" class="btn btn-danger w-50" data-bs-toggle="" data-bs-target="#exampleModal1">
                                             <i class="fa-solid fa-xmark"></i> Delete Account
                                         </button>
         
@@ -185,7 +218,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary">Update Password</button>
         </div>
         
       </div>
@@ -205,7 +238,7 @@
         </div>
         <div class="modal-body">
           <div class="mb-3 ">
-            <label for="exampleFormControlInput1" class="form-label">Title</label>
+            <label for="exampleFormControlInput1" class="form-label"></label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Post one">
           </div>
          
@@ -215,8 +248,8 @@
   
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+          <button type="button" class="btn btn-primary">save changes</button>
         </div>
       </div>
     </div>
@@ -249,7 +282,7 @@
             </div>
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+              <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="">
             </div>
     
         </div>
